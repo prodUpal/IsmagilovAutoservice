@@ -114,7 +114,7 @@
     <None Include="Resources\Image1.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\service_logo.png" />
+    <Resource Include="Resources\service_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
