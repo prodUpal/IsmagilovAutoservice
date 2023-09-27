@@ -22,7 +22,7 @@ namespace IsmagilovAutoservice
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();  
             MainFrame.Navigate(new ServicePage());
             Manager.MainFrame = MainFrame;
         }
