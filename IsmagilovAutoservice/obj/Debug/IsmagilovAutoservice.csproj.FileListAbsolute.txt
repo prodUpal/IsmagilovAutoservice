@@ -1,0 +1,6 @@
+C:\Users\prod_upal\Desktop\IsmagilovAutoservice\IsmagilovAutoservice\obj\Debug\IsmagilovAutoservice.csproj.AssemblyReference.cache
+C:\Users\prod_upal\Desktop\IsmagilovAutoservice\IsmagilovAutoservice\obj\Debug\AddEditPage.g.cs
+C:\Users\prod_upal\Desktop\IsmagilovAutoservice\IsmagilovAutoservice\obj\Debug\ServicePage.g.cs
+C:\Users\prod_upal\Desktop\IsmagilovAutoservice\IsmagilovAutoservice\obj\Debug\App.g.cs
+C:\Users\prod_upal\Desktop\IsmagilovAutoservice\IsmagilovAutoservice\obj\Debug\IsmagilovAutoservice_MarkupCompile.cache
+C:\Users\prod_upal\Desktop\IsmagilovAutoservice\IsmagilovAutoservice\obj\Debug\IsmagilovAutoservice_MarkupCompile.lref

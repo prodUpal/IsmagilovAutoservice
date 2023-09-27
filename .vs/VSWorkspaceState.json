@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\IsmagilovAutoservice",
+    "\\IsmagilovAutoservice\\Properties",
+    "\\IsmagilovAutoservice\\resources"
   ],
+  "SelectedNode": "\\IsmagilovAutoservice\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }
