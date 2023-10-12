@@ -23,6 +23,10 @@ namespace IsmagilovAutoservice
         public ServicePage()
         {
             InitializeComponent();
+
+            var currentServices = Ismagilov_autoserviceEntities.GetContext().Service.ToList();
+
+            ServiceListView.ItemsSource = currentServices;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
