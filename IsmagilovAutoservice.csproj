@@ -182,19 +182,19 @@
     <Resource Include="Resources\service_logo.png" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="IsmagilovModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>IsmagilovModel.Context.cs</LastGenOutput>
       <DependentUpon>IsmagilovModel.edmx</DependentUpon>
+      <LastGenOutput>IsmagilovModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="IsmagilovModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>IsmagilovModel.edmx</DependentUpon>
       <LastGenOutput>IsmagilovModel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
