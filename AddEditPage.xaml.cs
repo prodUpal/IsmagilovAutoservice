@@ -31,6 +31,7 @@ namespace IsmagilovAutoservice
                _currentService = SelectedService;
 
             DataContext = _currentService;
+            _currentService.Стоимость = 0;
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -41,7 +42,7 @@ namespace IsmagilovAutoservice
             {
                 errors.AppendLine("Укажите название услуги");
             }
-            _currentService.Стоимость = 0;
+           
             if (_currentService.Стоимость == 0)
             {
                 
