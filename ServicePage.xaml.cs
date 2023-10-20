@@ -121,6 +121,38 @@ namespace IsmagilovAutoservice
                 ServiceListView.ItemsSource = Ismagilov_autoserviceEntities2.GetContext().Service.ToList();
             }
         }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            var currentService = (sender as Button).DataContext as Service;
+
+             var currentClientServices = Ismagilov_autoserviceEntities2.GetContext().ClientService.ToList();
+            currentClientServices = currentClientServices.Where(p => p.ServiceID == currentService.ID).ToList();
+
+            if(currentClientServices.Count != 0)
+            {
+                MessageBox.Show("Невозможно выполинть удаление, так как существуют записи неа эту услугу");
+            }
+            else { 
+
+                if(MessageBox.Show("Вы точно хотите выполинть удаление?", "Внимание",
+                    MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+                    try 
+	                {	        
+		                Ismagilov_autoserviceEntities2.GetContext().Service.Remove(currentService);
+                         Ismagilov_autoserviceEntities2.GetContext().SaveChanges();
+                        ServiceListView.ItemsSource = Ismagilov_autoserviceEntities2.GetContext().Service.ToList();
+                        UpdateService();
+	                }
+	                catch (Exception ex)
+	                {
+
+		                MessageBox.Show(ex.Message.ToString());
+	                }
+                }
+            }
+        }
     }
 }
 

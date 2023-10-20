@@ -77,7 +77,7 @@
                         <TextBlock Text="{Binding Действующая_скидка, StringFormat=*скидка {0} % }" Opacity="{Binding Действующая_скидка}" Margin="5" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" FontSize="16"></TextBlock>
                         <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal">
                             <Button Name ="EditButton" Content="Редактировать" Margin="2" Click="EditButton_Click"></Button>
-                            <Button Name ="DeleteButton" Content="Удалить" Margin="2"></Button>
+                            <Button Name ="DeleteButton" Content="Удалить" Margin="2" Click="DeleteButton_Click"></Button>
                         </StackPanel>
                     </Grid>
                 </DataTemplate>
