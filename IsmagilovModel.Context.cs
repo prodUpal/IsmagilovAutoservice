@@ -13,17 +13,17 @@ namespace IsmagilovAutoservice
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Ismagilov_autoserviceEntities2 : DbContext
+    public partial class Ismagilov_autoserviceEntities3 : DbContext
     {
-
-        private static Ismagilov_autoserviceEntities2 _context;
-        public static Ismagilov_autoserviceEntities2 GetContext()
+        private static Ismagilov_autoserviceEntities3 _context;
+        public static Ismagilov_autoserviceEntities3 GetContext()
         {
-            if (_context == null) _context = new Ismagilov_autoserviceEntities2();
+            if (_context == null) _context = new Ismagilov_autoserviceEntities3();
             return _context;
         }
-        public Ismagilov_autoserviceEntities2()
-            : base("name=Ismagilov_autoserviceEntities2")
+
+        public Ismagilov_autoserviceEntities3()
+            : base("name=Ismagilov_autoserviceEntities3")
         {
         }
     

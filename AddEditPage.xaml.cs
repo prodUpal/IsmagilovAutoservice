@@ -70,12 +70,12 @@ namespace IsmagilovAutoservice
 
             if(_currentService.ID == 0)
             {
-                Ismagilov_autoserviceEntities2.GetContext().Service.Add(_currentService);
+                Ismagilov_autoserviceEntities3.GetContext().Service.Add(_currentService);
             }
 
             try
             {
-                Ismagilov_autoserviceEntities2.GetContext().SaveChanges();
+                Ismagilov_autoserviceEntities3.GetContext().SaveChanges();
                 MessageBox.Show("информация сохранена");
                 Manager.MainFrame.GoBack();
             }
