@@ -117,6 +117,9 @@
     <Compile Include="ServicePhoto.cs">
       <DependentUpon>IsmagilovModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="SignUpPage.xaml.cs">
+      <DependentUpon>SignUpPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tag.cs">
       <DependentUpon>IsmagilovModel.tt</DependentUpon>
     </Compile>
@@ -137,6 +140,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ServicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,16 +193,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\picture.jpg" />
-    <Content Include="IsmagilovModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>IsmagilovModel.edmx</DependentUpon>
-      <LastGenOutput>IsmagilovModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="IsmagilovModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>IsmagilovModel.edmx</DependentUpon>
-      <LastGenOutput>IsmagilovModel.cs</LastGenOutput>
-    </Content>
     <Resource Include="Услуги автосервиса\diz.jpg" />
     <Resource Include="Услуги автосервиса\rulevoe-upravlenie-avtomobilya.jpg" />
     <Resource Include="Услуги автосервиса\transmission.jpg" />
@@ -215,6 +212,18 @@
     <Resource Include="Услуги автосервиса\Электрика.png" />
     <None Include="picture.jpg" />
     <Resource Include="Resources\picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IsmagilovModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IsmagilovModel.edmx</DependentUpon>
+      <LastGenOutput>IsmagilovModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="IsmagilovModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IsmagilovModel.edmx</DependentUpon>
+      <LastGenOutput>IsmagilovModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

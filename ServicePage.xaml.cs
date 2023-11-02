@@ -33,7 +33,7 @@ namespace IsmagilovAutoservice
         {
             InitializeComponent();
 
-            var currentServices = Ismagilov_autoserviceEntities3.GetContext().Service.ToList();
+            var currentServices = Ismagilov_autoserviceEntities.GetContext().Service.ToList();
 
             ServiceListView.ItemsSource = currentServices;
 
@@ -45,7 +45,7 @@ namespace IsmagilovAutoservice
 
         private void UpdateService()
         {
-            var currentServices = Ismagilov_autoserviceEntities3.GetContext().Service.ToList();
+            var currentServices = Ismagilov_autoserviceEntities.GetContext().Service.ToList();
 
             if (ComboType.SelectedIndex == 0)
             {
@@ -131,8 +131,8 @@ namespace IsmagilovAutoservice
         {
             if (Visibility == Visibility.Visible)
             {
-                Ismagilov_autoserviceEntities3.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                ServiceListView.ItemsSource = Ismagilov_autoserviceEntities3.GetContext().Service.ToList();
+                Ismagilov_autoserviceEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                ServiceListView.ItemsSource = Ismagilov_autoserviceEntities.GetContext().Service.ToList();
             }
             UpdateService();
         }
@@ -141,7 +141,7 @@ namespace IsmagilovAutoservice
         {
             var currentService = (sender as Button).DataContext as Service;
 
-            var currentClientServices = Ismagilov_autoserviceEntities3.GetContext().ClientService.ToList();
+            var currentClientServices = Ismagilov_autoserviceEntities.GetContext().ClientService.ToList();
             currentClientServices = currentClientServices.Where(p => p.ServiceID == currentService.ID).ToList();
 
             if (currentClientServices.Count != 0)
@@ -155,9 +155,9 @@ namespace IsmagilovAutoservice
                 {
                     try
                     {
-                        Ismagilov_autoserviceEntities3.GetContext().Service.Remove(currentService);
-                        Ismagilov_autoserviceEntities3.GetContext().SaveChanges();
-                        ServiceListView.ItemsSource = Ismagilov_autoserviceEntities3.GetContext().Service.ToList();
+                        Ismagilov_autoserviceEntities.GetContext().Service.Remove(currentService);
+                        Ismagilov_autoserviceEntities.GetContext().SaveChanges();
+                        ServiceListView.ItemsSource = Ismagilov_autoserviceEntities.GetContext().Service.ToList();
                         UpdateService();
                     }
                     catch (Exception ex)
@@ -273,7 +273,10 @@ namespace IsmagilovAutoservice
             ChangePage(2, null);
         }
 
-      
+        private void SighUpButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new SignUpPage((sender as Button).DataContext as Service));
+        }
     }
 }
 

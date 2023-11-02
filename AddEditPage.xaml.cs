@@ -58,7 +58,7 @@ namespace IsmagilovAutoservice
             {
                 errors.AppendLine("Укажите корректный размер скидки услуги");
             }
-                if (string.IsNullOrWhiteSpace(_currentService.Длительность))
+            if (string.IsNullOrWhiteSpace(Convert.ToString(_currentService.Длительность)))
             {
                 errors.AppendLine("Укажите длительность услуги");
             }
@@ -70,12 +70,12 @@ namespace IsmagilovAutoservice
 
             if(_currentService.ID == 0)
             {
-                Ismagilov_autoserviceEntities3.GetContext().Service.Add(_currentService);
+                Ismagilov_autoserviceEntities.GetContext().Service.Add(_currentService);
             }
 
             try
             {
-                Ismagilov_autoserviceEntities3.GetContext().SaveChanges();
+                Ismagilov_autoserviceEntities.GetContext().SaveChanges();
                 MessageBox.Show("информация сохранена");
                 Manager.MainFrame.GoBack();
             }

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3a0deb2b53bd43a0a6d87d9602eae999" Name="Diagram1">
+      <Diagram DiagramId="0f27f1326c2246648569d567943d3fff" Name="Diagram1">
         <EntityTypeShape EntityType="Ismagilov_autoserviceModel.Client" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
         <EntityTypeShape EntityType="Ismagilov_autoserviceModel.ClientService" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
         <EntityTypeShape EntityType="Ismagilov_autoserviceModel.DocumentByService" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
@@ -18,13 +18,13 @@
         <EntityTypeShape EntityType="Ismagilov_autoserviceModel.Tag" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
         <AssociationConnector Association="Ismagilov_autoserviceModel.FK_client_a_import111_Gender" ManuallyRouted="false" />
         <AssociationConnector Association="Ismagilov_autoserviceModel.FK_ClientService_client_a_import111" ManuallyRouted="false" />
-        <AssociationConnector Association="Ismagilov_autoserviceModel.FK_ClientService_service_a_import" ManuallyRouted="false" />
+        <AssociationConnector Association="Ismagilov_autoserviceModel.FK_ClientService_Service" ManuallyRouted="false" />
         <AssociationConnector Association="Ismagilov_autoserviceModel.FK_DocumentByService_ClientService" ManuallyRouted="false" />
         <AssociationConnector Association="Ismagilov_autoserviceModel.FK_ProductSale_ClientService" ManuallyRouted="false" />
         <AssociationConnector Association="Ismagilov_autoserviceModel.FK_Product_Manufacturer" ManuallyRouted="false" />
         <AssociationConnector Association="Ismagilov_autoserviceModel.FK_ProductPhoto_Product" ManuallyRouted="false" />
         <AssociationConnector Association="Ismagilov_autoserviceModel.FK_ProductSale_Product" ManuallyRouted="false" />
-        <AssociationConnector Association="Ismagilov_autoserviceModel.FK_ServicePhoto_service_a_import" ManuallyRouted="false" />
+        <AssociationConnector Association="Ismagilov_autoserviceModel.FK_ServicePhoto_Service" ManuallyRouted="false" />
         <AssociationConnector Association="Ismagilov_autoserviceModel.AttachedProduct" ManuallyRouted="false" />
         <AssociationConnector Association="Ismagilov_autoserviceModel.TagOfClient" ManuallyRouted="false" />
       </Diagram>

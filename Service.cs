@@ -24,7 +24,7 @@ namespace IsmagilovAutoservice
         public int ID { get; set; }
         public string Наименование_услуги { get; set; }
         public string Главное_изображение { get; set; }
-        public string Длительность { get; set; }
+        public int Длительность { get; set; }
         public decimal Стоимость { get; set; }
         public Nullable<double> Действующая_скидка { get; set; }
         public string Описание { get; set; }
